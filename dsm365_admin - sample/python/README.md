@@ -1,5 +1,6 @@
-You can use them in the Linux background processing in Python2.7 like belows:
 
-$ nohup python /{your project path}/mcbAlarm_v2.py > dsm365_alarm.$(date +%Y-%m-%d).log 2>&1 &
+# ------------------------------------------ log ------------------------------------------
+@2024-10-16: 為了將mcb_record_detail這個table分離至其他單獨的MySQL server硬體上。
+             所以，為此做了這個版本的修改。全部跟 raw data I/O 相關的，通通都要分離
 
-$ nohup python /{your project path}/notificationBroadcast_v1.py > dsm365_notif.$(date +%Y-%m-%d).log 2>&1 &
+
